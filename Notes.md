@@ -8,3 +8,4 @@ Travel App using Google Maps Api
 1/28/22 - left off at 44:00
 1/29/22 - left off at 1:04
 2/01/22 - left off at 1:12:30
+2/02/22 - left off at 1:23 - displaying on the map
