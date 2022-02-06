@@ -7,6 +7,9 @@ import Rating from '@material-ui/lab/Rating';
 import useStyles from './style';
 import { GoogleMap } from '@react-google-maps/api';
 
+
+const MAP_KEY = process.env.REACT_APP_MAP_KEY
+
 const Map = ({ setCoordinates, setBounds, coordinates, places }) => {
     const classes = useStyles();
     const isDesktop = useMediaQuery('(min-width:600px)');
@@ -14,7 +17,7 @@ const Map = ({ setCoordinates, setBounds, coordinates, places }) => {
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: '' }}
+                bootstrapURLKeys={{ key: (MAP_KEY) }}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={14}
